@@ -1,0 +1,205 @@
+/* common style  */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;1,500&family=Work+Sans:wght@500&display=swap");
+
+* {
+  max-width: 1240px;
+  margin: 0 auto;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  max-width: 100%;
+}
+/* header section style */
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+}
+.navbar h3 {
+  font-size: 24px;
+  font-family: Poppins;
+}
+ul li {
+  list-style: none;
+  display: inline;
+  margin: 15px;
+  font-family: Poppins;
+  font-size: 15px;
+}
+.navbar a {
+  text-decoration: none;
+  color: #3a3a3a;
+  padding: 20px;
+}
+.navbar a:hover {
+  background-color: Orange;
+  color: white;
+}
+#hidden {
+  display: none;
+}
+/* top section start  */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.container h3 {
+  margin-left: 50px;
+  font-size: 30px;
+  font-family: Poppins;
+  color: #3a3a3a;
+}
+.container p {
+  margin-left: 50px;
+  font-size: 20px;
+  font-family: Poppins;
+  color: #3a3a3a;
+}
+.primary-btn {
+  margin: 20px;
+  margin-left: 50px;
+  font-size: 30px;
+  font-family: Poppins;
+  color: #3a3a3a;
+  background-color: #e02c6d;
+  border: 5px;
+  border-radius: 60px;
+  text-align: center;
+}
+.top-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.shadow {
+  background: #fff8f3;
+  background-image: url("../images/Circle\ design.svg"),
+    url("../images/Circle\ design.svg");
+  background-repeat: no-repeat;
+}
+/* logo section */
+.logos {
+  margin-top: 120px;
+}
+.popular {
+  margin: 60px 0px 0px 30px;
+}
+.popular h3 {
+  font-size: 28px;
+  color: #3a3a3a;
+  text-align: center;
+  justify-content: center;
+}
+.products {
+  margin: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  border-radius: 25px;
+  background-color: #f5f3f3;
+}
+/* popular section  */
+.cards {
+  border: 5px solid white;
+  background-color: rgba(0, 0, 0, 0.15);
+  padding: 10px;
+}
+.cards h4 {
+  font-size: 25px;
+  font-family: Poppins;
+}
+.cards p {
+  font-size: 18px;
+  color: #0a0826;
+
+  font-family: Poppins;
+}
+
+.fa-solid {
+  color: Orange;
+}
+.cards img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* feature section */
+.feature {
+  margin-top: 60px;
+  text-align: center;
+  justify-content: center;
+}
+/* footer item  */
+.footer-item {
+  margin-top: 30px;
+  text-align: center;
+  justify-content: center;
+  background-color: #0a0826;
+  color: #ffffff;
+  padding: 50px;
+}
+/* responsive navbar  */
+@media screen and (max-width: 567px) {
+  body {
+    width: 100%;
+  }
+  .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .navbar h3 {
+    font-size: 15px;
+    margin-left: 10px;
+  }
+  .navbar a {
+    display: none;
+  }
+  #center {
+    display: none;
+  }
+  #hidden {
+    display: inline;
+    text-align: center;
+    font-size: 25px;
+  }
+  .container {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .top-img {
+    margin-bottom: 40px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  .logos {
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .products {
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .feature {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center;
+    justify-content: center;
+    margin-left: 40px;
+  }
+  .footer-item {
+    width: 100%;
+  }
+}
